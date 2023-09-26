@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List || At-tarunsharma</title>
-    <link rel="stylesheet" href="style.css" class="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do_List | At-tarunsharma</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="todo-app">
-            <h2>To Do list</h2>
-            
+
+    <div class="wrapper">
+        <div class="task-input">
+            <img src="https://static.thenounproject.com/png/2292434-200.png">
+            <input type="text" placeholder="Add a new task">
         </div>
+
+        <div class="controls">
+            <div class="filters">
+                <span id="all" class="active">
+                    All
+                </span>
+                <span id="pending">Pending</span>
+                <span id="completed">Completed</span>
+            </div>
+            <button class="clear-btn">Clear All</button>
+        </div>
+        <ul class="task-box"></ul>
+
     </div>
 
+    <script src="index.js"></script>
 </body>
+
 </html>
